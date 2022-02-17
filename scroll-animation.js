@@ -17,6 +17,22 @@ function reveal() {
         reveals[i].classList.remove("active");
       }
     }
+    var bg = document.querySelectorAll(".circles")
+    switch (maxVisible){
+        case 0:
+            if(currentbg != 0){
+                bg[0].classList.remove("active");
+                currentbg = 0;
+            }
+            break;
+        case 1:
+            if(currentbg != 1){
+                bg[0].classList.add("active");
+                currentbg = 1;
+            }
+            break;
+    }
+    /*
     switch (maxVisible){
         case 0:
             if(currentbg != 0){
@@ -33,8 +49,7 @@ function reveal() {
                 currentbg = 1;
             }
             break;
-    }
+    }*/
   }
   
   window.addEventListener("scroll", reveal);
-  

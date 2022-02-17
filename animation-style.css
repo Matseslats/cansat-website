@@ -85,6 +85,10 @@ progress{
 .border-right{
   border-right: 4px solid white;
 }
+.border-sides{
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+}
 span{
   display: inline-block;
   vertical-align: middle;
@@ -142,5 +146,22 @@ AlwaysShowSection .reveal{
   opacity: 1;
 }
 .reveal.active{
+  opacity: 1;
+}
+/*.wave {
+  background-image: url(images/liquid-cheese.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}*/
+.circles {
+  opacity: 0;
+  transition: 0.75s all ease;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+.circles.active {
   opacity: 1;
 }
