@@ -6,10 +6,10 @@
   font-family: "Asap", sans-serif;
 }
 body{
-    background-image: url('images/stripe-bg.png');
+    background-image: url('images/liquid-cheese.svg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: cover;
     overflow-x: hidden;
 }
 
