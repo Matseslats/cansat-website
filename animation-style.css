@@ -28,7 +28,10 @@ fullsection{
 }
 
 section .container{
-  margin: 15%; /* HHow close to first element?*/
+  width: 100%;
+  margin: 5%; /* HHow close to first element?*/
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 7%; /* How close to each other?*/
 }
 fullsection h1{
@@ -90,6 +93,7 @@ progress{
   border-right: 4px solid white;
 }
 span{
+  width: 100%;
   display: inline-block;
   vertical-align: middle;
   line-height: 18px; /* <-- adjust this */
@@ -127,15 +131,7 @@ section .text-box {
   width: 33%;
 }
 
-@media (max-width: 900px){
-  section h1{
-    font-size: 2rem;
-    text-align: center;
-  }
-  section .text-container{
-    flex-direction: column;
-  }
-}
+
 
 .reveal{
   position: relative;
@@ -164,4 +160,52 @@ AlwaysShowSection .reveal{
 }
 .circles.active {
   opacity: 1;
+}
+.text-box h4 {
+  font-size: 1.2em;
+}
+.avatar {
+  width: 15em;
+  border-radius: 50%;
+  border: 0.6em solid white;
+}
+
+@media (max-width: 900px){
+  ul {
+    padding-left: 0;
+  }
+  li {
+    width: 33%;
+  }
+  .column {
+    width: 100%;
+    line-height: 200px;
+  }
+  .border-right{
+    border-right: 0px solid white;
+  }
+
+  .border-sides{
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+  }
+  section .text-container {
+    display: block;
+  }
+  section .text-container .text-box {
+    width: 100%;
+    flex-shrink: 0;
+    margin-bottom: 20%;
+    float:left;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  .mobilereveal {
+    position: relative;
+    opacity: 0;
+    transition: 0.75s all ease;
+  }
+  .mobilereveal.active {
+    opacity: 1;
+  }
 }
