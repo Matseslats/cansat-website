@@ -19,8 +19,6 @@ function reveal() {
     }
 
     // Reveal on mobile
-    
-    console.log(window.screen.width);
     if(window.screen.width < 900)
         var reveals = document.querySelectorAll(".mobilereveal");
         var maxVisible = 0;
