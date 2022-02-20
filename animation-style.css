@@ -205,6 +205,13 @@ AlwaysShowSection .reveal{
     text-align: center;
     flex-shrink: 0;
   }
+  .bordertop  {
+    padding-top: 10%;
+    border-top: 4px solid white;
+  }
+  AlwaysShowSection .text-box {
+    border-top: 0px solid white;
+  }
   .mobilereveal {
     position: relative;
     opacity: 0;
