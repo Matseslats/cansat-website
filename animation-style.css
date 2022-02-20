@@ -185,6 +185,7 @@ AlwaysShowSection .reveal{
   .column {
     width: 100%;
     line-height: 200px;
+    text-align: center;
   }
   .border-right{
     border-right: 0px solid white;
@@ -207,6 +208,9 @@ AlwaysShowSection .reveal{
   }
   .bordertop  {
     padding-top: 10%;
+    border-top: 4px solid white;
+  }
+  .bordertop2  {
     border-top: 4px solid white;
   }
   AlwaysShowSection .text-box {
