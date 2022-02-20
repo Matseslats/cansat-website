@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Asap", sans-serif;
 }
+html {
+  background-color: #1e1e1e;
+}
 body{
     background-image: url('images/liquid-cheese.svg');
     background-repeat: no-repeat;
@@ -156,7 +159,8 @@ AlwaysShowSection .reveal{
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
 }
 .circles.active {
   opacity: 1;
@@ -170,12 +174,13 @@ AlwaysShowSection .reveal{
   border: 0.6em solid white;
 }
 
+
 @media (max-width: 900px){
-  ul {
-    padding-left: 0;
+  fullsection{
+    min-height: 80vh;
   }
-  li {
-    width: 33%;
+  .circles {
+    min-height: 120%;
   }
   .column {
     width: 100%;

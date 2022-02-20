@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="scroll-animation.js"></script>
+    <script src="topnav.js"></script>
     <link rel="stylesheet" href="menu-style.css" />
     <link rel="stylesheet" href="animation-style.css" />
 
@@ -11,17 +12,19 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
     <meta charset="utf-8" />
     <title>Cansat Trident</title>
 </head>
 
 <body>
 <!-- <div class="wave">-->
-    <ul>
+    <ul class="topnav" id="myTopnav">
         <li><a class="current" href="index.html">Home</a></li>
         <li><a href="tech.html">Technical Info</a></li>
         <li><a href="about.html">About Us</a></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
       </ul> 
     <fullsection>
         <div class="grid-container">
@@ -51,7 +54,7 @@
     <section>
         <div class="container reveal">
             <div class="text-container">
-                <div class="text-box">
+                <div class="text-box mobilereveal">
                     <h3>Controlled decent</h3>
                     <p>
                         Our goal to demonstrate guided decent and landing is ambitious. We may not succeed, but ambition leads to innovation, and if we sucseed we wil have achieved something great.
@@ -59,13 +62,13 @@
                         <i>Failure is an option here. If things are not failing, you are not innovating enough. - Elon Musk</i> 
                     </p>
                 </div>
-                <div class="text-box border-sides">
+                <div class="text-box border-sides mobilereveal">
                     <h3>Atmospheric measurments</h3>
                     <p>
                         We aim to gain deeper knowledge of our planet by taking measurments of the atmosphere during decent. Our sensors can detect %INSERT SENSOR INFO%
                     </p>
                 </div>
-                <div class="text-box">
+                <div class="text-box mobilereveal">
                     <h3>Having fun<br><br></h3>
                     <p>
                         Our team are passiomnate about space. We recide at Andøya, the location of Norways only operational spaceport.

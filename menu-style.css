@@ -15,12 +15,13 @@ ul {
     float: left;
   }
   
-  li a {
+  li a, ul a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 1em;
   }
   
   /* Change the link color to #111 (black) on hover */
@@ -30,4 +31,35 @@ ul {
 
   .current {
     background-color: #0060df;
+  }
+
+  ul .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .topnav li:not(:first-child) {
+      display: none;
+    }
+    ul {
+      padding-left: 0;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+      
+    }
+  
+    .topnav.responsive {position: fixed;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive li {
+      float: none;
+      display: block;
+      text-align: left;
+      margin-left: 0;
+    }
   }
