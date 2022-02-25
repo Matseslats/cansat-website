@@ -34,6 +34,7 @@
           }
         }
         </script>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
 <body>
@@ -54,6 +55,13 @@
             </div>
         </div>
     </fullsection>
+    <AlwaysShowSection>
+
+            <div style="display: block; width: 50%;height: 20%;"><span>
+                <model-viewer alt="Cansat" src="models/Frame.gltf" ar ar-modes="webxr scene-viewer quick-look" environment-image="images/logo.png" poster="images/logo.png" seamless-poster shadow-intensity="1" camera-controls></model-viewer>
+            </span></div>
+        </div>
+    </AlwaysShowSection>
     <section>
         <div class="container reveal"><span>
             <div class="column border-right">

@@ -37,19 +37,21 @@ function reveal() {
     }
 
     var bg = document.querySelectorAll(".circles");
-    switch (maxVisible){
-        case 0:
-            if(currentbg != 0){
-                bg[0].classList.remove("active");
-                currentbg = 0;
-            }
-            break;
-        case 1:
-            if(currentbg != 1){
-                bg[0].classList.add("active");
-                currentbg = 1;
-            }
-            break;
-    };
+    if(bg.length > 0){
+        switch (maxVisible){
+            case 0:
+                if(currentbg != 0){
+                    bg[0].classList.remove("active");
+                    currentbg = 0;
+                }
+                break;
+            case 1:
+                if(currentbg != 1){
+                    bg[0].classList.add("active");
+                    currentbg = 1;
+                }
+                break;
+        };
+    }
 }
 window.addEventListener("scroll", reveal);
