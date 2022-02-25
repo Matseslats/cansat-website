@@ -27,7 +27,7 @@ section, fullsection, AlwaysShowSection{
 }
 fullsection{
   min-height: 100vh;
-  /* margin-bottom: -15%; */
+  margin-bottom: -15%;
 }
 
 section .container{
