@@ -81,12 +81,15 @@ progress{
   line-height: 300px;
 }
 
-.column h2{
+.column h2 {
   font-size: 2.7em;
-  text-align: center;
   height: 100%;
   vertical-align: middle;
   text-transform: uppercase;
+
+}
+.column h2 :not(.texttop){
+  text-align: center;
 
 }
 .border-right{
@@ -176,6 +179,12 @@ AlwaysShowSection .reveal{
   border-radius: 50%;
   border: 0.6em solid white;
 }
+.logotop {
+  display: table-cell; padding-left: 10%;width: auto;height: 19em; 
+}
+.texttop {
+  text-align: right;
+}
 
 
 @media (max-width: 900px){
@@ -226,5 +235,14 @@ AlwaysShowSection .reveal{
   }
   .mobilereveal.active {
     opacity: 1;
+  }
+  .logotop {
+    display: table-cell; padding-left: 0%;width: auto;height: 19em;
+    padding-top: 8%; 
+  }
+  .texttop {
+    text-align: center;
+    line-height: normal;
+    padding-top: 50%;
   }
 }
