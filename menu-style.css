@@ -39,7 +39,7 @@ ul {
   
   .active, .collapsible:hover {
     background-color: transparent;
-    color: red;
+    color: #0060df;
   }
   
   .content {
