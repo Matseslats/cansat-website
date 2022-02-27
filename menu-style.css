@@ -37,9 +37,6 @@ ul {
     font-size: 15px;
   }
   
-  .active {
-
-  } 
   .collapsible:hover {
     background-color: transparent;
     color: #3e8bf0;
