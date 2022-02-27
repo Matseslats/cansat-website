@@ -24,6 +24,30 @@ ul {
     text-decoration: none;
     font-size: 1em;
   }
+
+  .collapsible {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding-bottom: 10px;
+    width: 30%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: transparent;
+    color: red;
+  }
+  
+  .content {
+    padding: 0 10px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+  }
   
   /* Change the link color to #111 (black) on hover */
   li a:hover {

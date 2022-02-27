@@ -32,9 +32,11 @@
           }
         }
         </script>
+          
 </head>
 
 <body>
+    
     <ul class="topnav" id="myTopnav">
         <li><a href="index.html">Home</a></li>
         <li><a href="tech.html">Technical Info</a></li>
@@ -61,8 +63,28 @@
                     <h3>Gabriel Røer</h3>
                     <h4>Team Leader</h4>
                     <p>
-                        I am responsible for the team and that thing gets done.<br>Contact: <b>+47 46910340</b>
-                    </p>
+                        I ensure tasks are completed and going smoothly <br><br>
+                        Roles: Physics Theory, General Design, Organization, Secondary and Primary Mission, CAD/CAM.
+                    </p><br>
+                    <p>
+                        Age: 19 years old. <br>
+                        School: Andøy Videregående Skole - VG3 Space Technology.
+                    </p> <br>
+                    <p>
+                        Contact: <br>
+                        Email: NorgeSkiFollo@gmail.com <br>
+                        Phone: +47 95040971
+                    </p> <br>
+                   
+                    <button type="button" class="collapsible">Read More</button>
+                    <div class="content">
+                        <p>Siden så lenge jeg kan huske har jeg alltid hatt en fascinasjon for å finne ut av hvordan ting funker. 
+                        Plukke gjenstander fra hverandre og sette dem sammen igjen for å se hva de består av. 
+                        Elektronikk og teknologi ble derfor fort naturlige temaer å interessere seg for, og senere også romtek. 
+                        Derfor var min første reaksjon da jeg hørte om denne konkerangsen var at dette var noe jeg måtte være med på. 
+                        Derfor startet jeg dette kansat teamet.</p>
+                    </div>
+                    
                 </div>
                 
                 <div class="text-box border-sides mobilereveal">
@@ -70,16 +92,49 @@
                     <h3>Mats Haugerud</h3>
                     <h4>Team manager</h4>
                     <p>
-                        I am responsible for the website and the mechanical design
+                        I work on the website and mechanical design <br><br>
+                        Roles: Physics Theory, General Design, Organization, Secondary and Primary Mission, CAD/CAM.
+                    </p><br>
+                    <p>
+                        Age: 20 years old. <br>
+                        School: Andøy Videregående Skole - VG3 Space Technology.
+                    </p> <br>
+                    <p>
+                        Contact: <br>
+                        Email: haugerudmats@gmail.com <br>
+                        Phone: +47 95040971
                     </p>
+                    <br>
+                   
+                    <button type="button" class="collapsible">Read More</button>
+                    <div class="content">
+                        <p>Jeg har stor interesse innenfor både elektronikk, programmering og romfart. Dette prosjektet virket derfor som en perfekt blanding mellom mine hobbyer.</p>
+                    </div>
                 </div>
                 <div class="text-box mobilereveal">
                     <img src="avatars/lukas.svg" class="avatar" style="background-color: #ECF0F1;">
                     <h3>Lukas Bendiksen</h3>
                     <h4>Designer</h4>
                     <p>
-                        I am responsible for the hardware and some mechanical design<br>Contact: <b>CansatTrident@gmail.com</b>
+                        I am in charge of economics and design. <br><br>
+                        Roles: Physics Theory, General Design, Organization, Secondary and Primary Mission, CAD/CAM.
+                    </p><br>
+                    <p>
+                        Age: 20 years old. <br>
+                        School: Andøy Videregående Skole - VG1 Electrical Engineering and Computer Technology.
+                    </p> <br>
+                    <p>
+                        Contact: <br>
+                        Email: lukas.bendiksen@gmail.com <br>
+                        Phone: +47 90532258
                     </p>
+                    <br>
+                   
+                    <button type="button" class="collapsible">Read More</button>
+                    <div class="content">
+                        <p>Jeg har stor interesse før alt innen STEM. Jeg driver aktivt med elektrisk og mekanisk ingeniør arbeid og litt programmering. 
+                           Jeg ble med i prosjektet siden det høres ut som en utfordring og var mye og lære, jeg ville løse problemer og hjelpe til suksess.</p>
+                    </div>
                 </div>
             </div>
             <br><br>
@@ -111,8 +166,24 @@
                 </div>
             </div>
             <br><br>
-            <p style="text-align: center;"><i>Some portraits are in the making</i></p>
+            <!--<p style="text-align: center;"><i>Some portraits are in the making</i></p> -->
         </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
     </section>
 
     <AlwaysShowSection>
