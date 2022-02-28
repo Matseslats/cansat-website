@@ -193,7 +193,9 @@ AlwaysShowSection .reveal{
   width: 100%;
   max-width: 300px; 
 }
-
+.person-info h3 {
+  height: 3.5em;
+}
 
 @media (max-width: 1230px){
   section .text-container {
