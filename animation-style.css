@@ -283,4 +283,8 @@ AlwaysShowSection .reveal{
     line-height: normal;
     padding-top: 50%;
   }
+  .smaller h2 {
+    padding-left: 0;
+    text-align: center;
+  }
 }
