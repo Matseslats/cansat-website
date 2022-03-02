@@ -194,10 +194,16 @@ AlwaysShowSection .reveal{
 .texttop {
   text-align: right;
 }
-
-<<<<<<< Updated upstream
-
-=======
+.sponsors {
+  text-align: center; 
+}
+.sponsor {
+  width: 100%;
+  max-width: 300px; 
+}
+.person-info h3 {
+  height: 4em;
+}
 .puchasestep {
   width: 100%;
 }
@@ -219,7 +225,6 @@ AlwaysShowSection .reveal{
     border-right: 0px solid white;
   }
 }
->>>>>>> Stashed changes
 @media (max-width: 900px){
   fullsection{
     min-height: 80vh;
