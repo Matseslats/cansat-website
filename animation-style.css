@@ -207,6 +207,9 @@ AlwaysShowSection .reveal{
 .puchasestep {
   width: 100%;
 }
+form h3 {
+  padding-left: 0;
+}
 
 @media (max-width: 1230px){
   section .text-container {
