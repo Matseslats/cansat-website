@@ -87,12 +87,20 @@ progress{
   height: 100%;
   vertical-align: middle;
   text-transform: uppercase;
-
 }
 .column h2 :not(.texttop){
   text-align: center;
 
 }
+.smaller h2 {
+  font-size: 2em;
+  height: 100%;
+  vertical-align: middle;
+  padding-left: 2em;
+  text-align: left;
+}
+
+
 .border-right{
   border-right: 4px solid white;
 }
@@ -187,7 +195,31 @@ AlwaysShowSection .reveal{
   text-align: right;
 }
 
+<<<<<<< Updated upstream
 
+=======
+.puchasestep {
+  width: 100%;
+}
+
+@media (max-width: 1230px){
+  section .text-container {
+    display: block;
+  }
+  section .text-container .text-box {
+    width: 100%;
+    flex-shrink: 0;
+    margin-bottom: 20%;
+    float:left;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  .border-sides{
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+  }
+}
+>>>>>>> Stashed changes
 @media (max-width: 900px){
   fullsection{
     min-height: 80vh;
