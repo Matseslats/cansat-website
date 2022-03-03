@@ -228,7 +228,7 @@ form h3 {
     border-right: 0px solid white;
   }
 }
-@media (max-width: 900px){
+@media (max-width: 1000px){
   fullsection{
     min-height: 80vh;
   }
@@ -305,5 +305,10 @@ form h3 {
   .circles.active {
     opacity: 0;
     z-index: 0;
+  }
+}
+@media (max-width: 450px){
+  .column h2 {
+    font-size: 2em;
   }
 }
