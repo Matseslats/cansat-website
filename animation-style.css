@@ -87,12 +87,20 @@ progress{
   height: 100%;
   vertical-align: middle;
   text-transform: uppercase;
-
 }
 .column h2 :not(.texttop){
   text-align: center;
 
 }
+.smaller h2 {
+  font-size: 2em;
+  height: 100%;
+  vertical-align: middle;
+  padding-left: 2em;
+  text-align: left;
+}
+
+
 .border-right{
   border-right: 4px solid white;
 }
@@ -196,6 +204,12 @@ AlwaysShowSection .reveal{
 .person-info h3 {
   height: 4em;
 }
+.puchasestep {
+  width: 100%;
+}
+form h3 {
+  padding-left: 0;
+}
 
 @media (max-width: 1230px){
   section .text-container {
@@ -277,6 +291,9 @@ AlwaysShowSection .reveal{
     line-height: normal;
     padding-top: 50%;
   }
+  .smaller h2 {
+    padding-left: 0;
+    text-align: center;
   .sponsor {
     width: 100%;
     max-width: 300px; 
