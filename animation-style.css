@@ -308,6 +308,10 @@ form h3 {
   }
 }
 @media (max-width: 450px){
+  section {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
   .column h2 {
     font-size: 2em;
   }
