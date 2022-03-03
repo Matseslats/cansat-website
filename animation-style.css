@@ -278,8 +278,13 @@ form h3 {
     opacity: 1;
   }
   .logotop {
-    display: table-cell; padding-left: 0%;width: auto;height: 19em;
-    padding-top: 8%; 
+    /* display: table-cell; padding-left: 0%;width: auto;height: 19em;
+    padding-top: 8%;  */
+    width: 70%;
+    max-width: 400px;
+    height: auto;
+    margin: auto;
+    padding-left: 0;
   }
   .texttop {
     text-align: center;
@@ -289,5 +294,15 @@ form h3 {
   .smaller h2 {
     padding-left: 0;
     text-align: center;
+  .sponsor {
+    width: 100%;
+    max-width: 300px; 
+  }
+  .mobilecenter {
+    text-align: center; 
+  }
+  .circles.active {
+    opacity: 0;
+    z-index: 0;
   }
 }

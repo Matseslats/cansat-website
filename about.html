@@ -2,6 +2,28 @@
 <html>
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="icon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="icon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="icon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="icon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="icon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="icon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="icon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="icon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="icon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="icon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="icon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="icon/mstile-310x310.png" />
+
     <script src="scroll-animation.js"></script>
     <script src="topnav.js"></script>
     <link rel="stylesheet" href="menu-style.css" />
@@ -31,7 +53,7 @@
 <body>
     
     <ul class="topnav" id="myTopnav">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="tech.html">Technical Info</a></li>
         <li><a class="current" href="about.html">About Us</a></li>
         <li class="navright"><a href="contact.html">Contact</a></li>
@@ -53,7 +75,7 @@
     <section>
         <div class="container">
             <div class="text-container">
-                <div class="text-box mobilereveal">
+                <div class="text-box mobilereveal person-info">
                     <img src="avatars/gabriel.svg" class="avatar" style="background-color: #ECF0F1;">
                     <h3>Gabriel Røer, 19</h3>
                     <h4>Team Leader</h4>
@@ -80,7 +102,7 @@
                     
                 </div>
                 
-                <div class="text-box border-sides mobilereveal">
+                <div class="text-box border-sides mobilereveal person-info">
                     <img src="avatars/mats.svg" class="avatar">
                     <h3>Mats Haugerud, 20</h3>
                     <h4>Team manager</h4>
@@ -99,11 +121,10 @@
                     <br>
                     <p>
                         Email: haugerudmats@gmail.com <br>
-                        Phone: +47 95040971
                     </p>
                     </div>
                 </div>
-                <div class="text-box mobilereveal">
+                <div class="text-box mobilereveal person-info">
                     <img src="avatars/lukas.svg" class="avatar" style="background-color: #ECF0F1;">
                     <h3>Lukas Bendiksen, 19</h3>
                     <h4>Designer</h4>
@@ -128,30 +149,66 @@
             </div>
             <br><br>
             <div class="text-container">
-                <div class="text-box  mobilereveal">
+                <div class="text-box  mobilereveal person-info">
                     <img src="avatars/felix.svg" class="avatar">
-                    <h3>Felix Andreassen</h3>
+                    <h3>Felix Andreassen, 19</h3>
                     <h4>Secretary</h4>
-                    <p>
-                        I am responsible for the documentation and filing of the team
-                    </p>
+                    <br>
+                    <button type="button" class="collapsible">Read More</button>
+                    <div class="content">
+                        <!-- <p>Jeg har stor interesse før alt innen STEM. Jeg driver aktivt med elektrisk og mekanisk ingeniør arbeid og litt programmering. 
+                           Jeg ble med i prosjektet siden det høres ut som en utfordring og var mye og lære, jeg ville løse problemer og hjelpe til suksess.</p> -->
+                           <p><br>
+                            Roles: Documenation, Writing, Keeping order in our documents
+                        </p><br>
+                        <p>
+                            Andøy Upper Secondary School - VG3 Space Technology.
+                        </p> <br>
+                        <p>
+                            Email: felixandreassenpost@gmail.com
+                        </p>
+
+                        </div>
                 </div>
                 
-                <div class="text-box border-sides mobilereveal">
+                <div class="text-box border-sides mobilereveal person-info">
                     <img src="avatars/max.svg" class="avatar" style="background-color: #ECF0F1;">
-                    <h3>Maximilian Kristoffersen</h3>
+                    <h3>Maximilian Kristoffersen, 18</h3>
                     <h4>Graphics Designer</h4>
-                    <p>
-                        I am responsible for the graphics and logo design
-                    </p>
+                    <br>
+                    <button type="button" class="collapsible">Read More</button>
+                    <div class="content">
+                        <!-- <p>Jeg har stor interesse før alt innen STEM. Jeg driver aktivt med elektrisk og mekanisk ingeniør arbeid og litt programmering. 
+                           Jeg ble med i prosjektet siden det høres ut som en utfordring og var mye og lære, jeg ville løse problemer og hjelpe til suksess.</p> -->
+                           <p><br>
+                            Roles: Graphic design
+                        </p><br>
+                        <p>
+                            Andøy Upper Secondary School - VG3 Space Technology.
+                        </p> <br>
+
+                        </div>
                 </div>
-                <div class="text-box mobilereveal">
+                <div class="text-box mobilereveal person-info">
                     <img src="avatars/wiktor.svg" class="avatar">
-                    <h3>Wiktor Becker</h3>
+                    <h3>Wiktor Becker, 18</h3>
                     <h4>Designer</h4>
-                    <p>
-                        I am responsible for the design
-                    </p>
+                    <br>
+                    <button type="button" class="collapsible">Read More</button>
+                    <div class="content">
+                        <!-- <p>Jeg har stor interesse før alt innen STEM. Jeg driver aktivt med elektrisk og mekanisk ingeniør arbeid og litt programmering. 
+                           Jeg ble med i prosjektet siden det høres ut som en utfordring og var mye og lære, jeg ville løse problemer og hjelpe til suksess.</p> -->
+                           <p><br>
+                            Roles: Designer
+                        </p><br>
+                        <p>
+                            Andøy Upper Secondary School - VG3 Space Technology.
+                        </p> <br>
+                        <p>
+                            Email: beckerwiktor@gmail.com
+                        </p>
+
+                        </div>
                 </div>
             </div>
             <br><br>
@@ -179,7 +236,7 @@
         <div class="container reveal">
             <div class="text-container">
                 <div class="text-box">
-                    <img src="images/andoy-bok-og-papirhandel.png" alt="Andøy Papir og Bokhandel" style="width:22.393em;height:10em">
+                    <img src="images/andoy-bok-og-papirhandel.png" alt="Andøy Papir og Bokhandel" class="sponsor">
                 </div>
             </div>
         </div>
