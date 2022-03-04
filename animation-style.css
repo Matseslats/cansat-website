@@ -200,6 +200,8 @@ AlwaysShowSection .reveal{
 .sponsor {
   width: 100%;
   max-width: 300px; 
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .person-info h3 {
   height: 4em;
@@ -295,9 +297,18 @@ form h3 {
     padding-left: 0;
     text-align: center;
   }
+  .centerimgmobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .sponsor {
-    width: 100%;
+    width: 99%;
     max-width: 300px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
   }
   .mobilecenter {
     text-align: center; 
