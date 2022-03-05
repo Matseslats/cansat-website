@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <meta charset="utf-8" />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <title>Trident - Technical info</title>
     <meta name="description" content="Technical info for the 2022 Cansat Trident team located at Andøya, Norway."/>
     <meta name="keywords" content="Cansat, ESA, Trident, Andøya" />
@@ -61,8 +62,8 @@
 <body>
     <ul class="topnav" id="myTopnav">
         <li><a href="/">Home</a></li>
-        <li><a class="current" href="tech.html">Technical Info</a></li>
-        <li><a href="mechanical.html">Mechanical Info</a></li>
+        <li><a href="tech.html">Technical Info</a></li>
+        <li><a class="current" href="mechanical.html">Mechanical Info</a></li>
         <li><a href="about.html">About Us</a></li>
         <li class="navright"><a href="contact.html">Contact</a></li>
         <li class="navright"><a href="contributor.html">Contributors</a></li>
@@ -74,80 +75,43 @@
     <fullsection>
         <div class="grid-container">
             <div class="grid-element">
-                <p><h1>Progress:</h1></p>
+                <p><h1>Mechanical info</h1></p>
             </div>
-            <div class="grid-element">
-                <progress value="10" max="100" style="width:50%"></progress>
-            </div>
-            
         </div>
     </fullsection>
     <section>
         <div class="container reveal"><span>
             <div class="column border-right">
-                <h2>Trident</h2>
+                <h2>Models</h2>
             </span></div>
             
             <div class="column"><span>
                 <h3>
                     <p>
-                        Trident is a Cansat compeating in the 2022 Norwegian CanSat Competition
-                        <br><br> 
-                        Cansat Trident aims to plan, develop and demonstrate guided landing using a tri-rotor-drone. We will use internal instruments that measure position, rotation, and acceleration in 3 dimensions during the flight to assist with the guided landing. In addition, we will take atmospheric measurements such as temperature, pressure, and atmospheric composition during the flight.
-                    </p>
-                </h3>
-            </span></div>
-        </div>
-    </section>
-    
-    <section>
-        <div class="container reveal bordertop2"><span>
-            <div class="column border-right">
-                <h2>Mechanical</h2>
-            </span></div>
-            
-            <div class="column"><span>
-                <h3>
-                    <p>
-                        Our plan in to use three propellars to steer the cansat. By controlling the frequency of rotation of each propeller we will be able to control pitch and yaw. Roll control will be to rotate the arm of one of the propellers.
-                        <br><br>
-                        The small formfactor of the Cansat requires us to store the propellers in the body on ascent. When we have reached apogee we will release the three spring-loaded arms and fire up the propellers. 
+                        These are the models for the mechanical functioning of our CanSat. All models are under development, but this shows our ideas and design philosophy.
                     </p>
                 </h3>
             </span></div>
         </div>
     </section>
 
+    <AlwaysShowSection>
+        <div style="display: block; width: 70%;height: 80%;"><span>
+            <model-viewer alt="Cansat" src="models/Arm.gltf" loading="eager" ar ar-modes="webxr scene-viewer quick-look" environment-image="images/logo.png"  poster="images/logo.png"  seamless-poster --poster-color transparent shadow-intensity="1" camera-controls disable-zoom></model-viewer>
+            <style>
+                model-viewer {
+                  width: 100%;
+                  height: 600px;
+                  align-content: center;
+                  --poster-color: transparent;
+                }
+                </style>
+        </span></div>
+        
+    </div>
+    </AlwaysShowSection>
     <section>
-        <div class="container reveal bordertop2"><span>
-            <div class="column border-right">
-                <h2>Sensors</h2>
-            </span></div>
-            
-            <div class="column"><span>
-                <h3>
-                    <p>
-                        We have currently not decided on which sensors we are going to use. Our goal will be tomeasure the cansats orientation and position, as well as the temperature, pressure, magnetic field strength and some atmospheric measurments. If we get the funding, we aim to bring a camera.
-                    </p>
-                </h3>
-            </span></div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container reveal bordertop2"><span>
-            <div class="column border-right">
-                <h2>Software</h2>
-            </span></div>
-            
-            <div class="column"><span>
-                <h3>
-                    <p>
-                        We will be developing most of the software ourselves. Libraries may be used. The software is currently in the startup phase.
-                    </p>
-                </h3>
-            </span></div>
-        </div>
+        <p><i>Above is a concept of the arm that will need to rotate in order to control the roll during descent.</i></p>
     </section>
 
     <AlwaysShowSection>
