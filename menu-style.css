@@ -65,13 +65,13 @@ ul {
   .navright {
     float: right;
   }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1210px) {
     ul {
       padding-left: 0;
       padding-right: 0;
     }
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 730px) {
     .topnav li:not(:first-child) {
       display: none;
     }
