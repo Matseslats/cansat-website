@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="icon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="icon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="icon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="icon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="icon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="icon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="icon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="icon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="icon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="icon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="icon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="icon/mstile-310x310.png" />
+
+    <script src="scroll-animation.js"></script>
+    <script src="topnav.js"></script>
+    <link rel="stylesheet" href="menu-style.css" />
+    <link rel="stylesheet" href="animation-style.css" />
+
+    <link rel="prefetch" href="images/bullseye-gradient.svg" />
+    <link rel="prefetch" href="images/liquid-cheese.svg" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8" />
+    <title>Trident - Technical info</title>
+    <meta name="description" content="Technical info for the 2022 Cansat Trident team located at Andøya, Norway."/>
+    <meta name="keywords" content="Cansat, ESA, Trident, Andøya" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ResearchProject",
+            "name": "CanSat Trident 2022",
+            "alternateName": "Trident",
+            "description": "Official website for the 2022 Cansat Trident team located at Andøya, Norway.",
+            "url": "https://cansat-trident.space/",
+            "logo": "https://cansat-trident.space/images/logo.png"
+        }
+        </script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+    
+            gtag('config', 'G-DJ6WEV7CD6');
+            </script>
+</head>
+
+<body>
+    <ul class="topnav" id="myTopnav">
+        <li><a href="/">Home</a></li>
+        <li><a href="mission.html">Mission</a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a class="current" href="resources.html">Resources</a></li>
+        <li class="navright"><a href="contact.html">Contact</a></li>
+        <li class="navright"><a href="contributor.html">Contributors</a></li>
+        <li class="navright"><a href="store.html">Store</a></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+      </ul> 
+    <fullsection>
+        <div class="grid-container">
+            <div class="grid-element">
+                <p><h1>Resources</h1></p>
+                <p><h3>Images, Videos, Data and Software</h3></p>
+            </div>
+            
+        </div>
+    </fullsection>
+    <section>
+        <div class="container reveal bordertop">
+            <div class="text-container">
+                <div class="text-box mobilereveal">
+                    <h3>Images</h3>
+                    <p>
+                        Below is a collection of images of our journey. To see more updates follow us om Ingstagram or Twitter. <br><br>INS TWT buttons
+                    </p>
+                </div>
+                <div class="text-box border-sides mobilereveal">
+                    <h3>Data</h3>
+                    <p>
+                        All of our data is open-source. You are free (and we encourage you) to download our data and analyse it as you wish. We would love to see what you come up with by tweeting at us <a href="https://twitter.com/CansatTrident" style="color: #3e8bf0;">@cansattrident</a> or contacting us through different means.
+                    </p>
+                </div>
+                <div class="text-box mobilereveal">
+                    <h3>Software</h3>
+                    <p>
+                        The software we develop is also free to use. We cannot promise it will work out of the box, but we are putting our software out there so you can play around with what we have created, make remixes and use it in your own projects. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <!-- (A) ADD IMAGES -->
+        <div id="imageraster">
+        
+        <script>
+            var URLs = [];
+            for (let i = 0; i < 75; i++){
+                URLs[i] = "/resources/images/IMG (" + (i+1) + ").JPG";
+            }
+
+            window.addEventListener("load", () => {
+            // (B) GET HTML ELEMENT
+            var imageamount = 10;
+            var body = document.getElementById("imageraster");
+            for (let i = 0; i <= URLs.length; i++){
+                let imgTag = `<img src="${URLs[i]}" alt="" />`;
+                body.innerHTML += imgTag;
+                console.log(imgTag)
+            }
+            });
+        </script>
+        </div>
+    </section>
+
+    <AlwaysShowSection>
+        
+        <div class="container reveal">
+            <div class="text-container">
+                <div class="text-box centerimgmobile">
+                    <a href="andoybokogpapir.html"><img src="images/andoy-bok-og-papirhandel.png" alt="Andøy Papir og Bokhandel" class="sponsor"></a>
+                    <a href="jokerbleik.html"><img src="images/jokerbleik.png" alt="Joker Bleik" class="sponsor"></a>
+                    <a href="polyalkemi.html"><img src="images/polyalkemi.png" alt="Poly Alkemi" class="sponsor"></a>
+                </div>
+            </div>
+        </div>
+    </AlwaysShowSection>
+    <section \>
+</body>
+
+</html>

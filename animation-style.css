@@ -39,6 +39,25 @@ section .container{
   margin-right: 5%;
   margin-bottom: 7%; /* How close to each other?*/
 }
+section .centerbutton {
+  width: 100%;
+  display: table-cell;
+  float: right;
+  vertical-align: middle;
+  text-align: center;
+}
+a {
+  color: #3e8bf0;
+}
+#imageraster {
+  border-color: white;
+  border-width: 10px;
+  width: 90%;
+}
+#imageraster img {
+  width: 33%;
+}
+
 fullsection h1{
   font-size: 3rem;
   margin: 0;
@@ -211,6 +230,25 @@ AlwaysShowSection .reveal{
 }
 form h3 {
   padding-left: 0;
+}
+button{
+  text-align: center;
+  padding: 20px;
+  background-color: #0060df;
+  border-style:solid;
+  border-color: #ffffff;
+  border-width: 4px;
+  border-radius: 20px;
+}
+button:hover{
+  background-color: #003479;
+  cursor: pointer;
+}
+button a {
+  color: white;
+  text-decoration: none;  
+  font-size: large;
+  font-weight: bold;
 }
 
 @media (max-width: 1230px){
