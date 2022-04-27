@@ -14,7 +14,7 @@ function reveal() {
         reveals[i].classList.add("active");
         maxVisible = i;
       } else {
-        reveals[i].classList.remove("active");
+        // reveals[i].classList.remove("active");
       }
     }
 
@@ -31,27 +31,27 @@ function reveal() {
             reveals[i].classList.add("active");
             maxVisible = i;
         } else {
-            reveals[i].classList.remove("active");
+            // reveals[i].classList.remove("active");
         }
         
     }
 
-    var bg = document.querySelectorAll(".circles");
-    if(bg.length > 0){
-        switch (maxVisible){
-            case 0:
-                if(currentbg != 0){
-                    bg[0].classList.remove("active");
-                    currentbg = 0;
-                }
-                break;
-            case 1:
-                if(currentbg != 1){
-                    bg[0].classList.add("active");
-                    currentbg = 1;
-                }
-                break;
-        };
-    }
+    // var bg = document.querySelectorAll(".circles");
+    // if(bg.length > 0){
+    //     switch (maxVisible){
+    //         case 0:
+    //             if(currentbg != 0){
+    //                 bg[0].classList.remove("active");
+    //                 currentbg = 0;
+    //             }
+    //             break;
+    //         case 1:
+    //             if(currentbg != 1){
+    //                 bg[0].classList.add("active");
+    //                 currentbg = 1;
+    //             }
+    //             break;
+    //     };
+    // }
 }
 window.addEventListener("scroll", reveal);
