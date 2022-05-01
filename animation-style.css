@@ -248,6 +248,11 @@ AlwaysShowSection .reveal{
 .texttop {
   text-align: right;
 }
+.allsponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .sponsors {
   text-align: center; 
 }
