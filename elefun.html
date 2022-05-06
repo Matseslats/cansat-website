@@ -50,14 +50,51 @@
             }
             </script>
             <script>
-                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                (function () {
+    'use strict';
 
-                ga('create', 'G-DJ6WEV7CD6');
-                ga('set', 'title', 'Elefun');
-                ga('send', 'pageview');
+    angular
+        .module('app', ['ui.router'])
+        .config(config)
+        .run(run);
+
+    config.$inject = ['$locationProvider', '$stateProvider', '$urlRouterProvider'];
+    function config($locationProvider, $stateProvider, $urlRouterProvider) {
+        $locationProvider.html5Mode(true);
+
+        $urlRouterProvider.otherwise("/");
+
+        $stateProvider
+
+            .state('home', {
+                url: '/',
+                templateUrl: 'views/home.html',
+                controller: function ($rootScope) {
+                    $rootScope.title = 'Snoopex Computer Repairs and Upgrades Campbelltown and Wollongong';
+                    $rootScope.metaDescription = 'Professional computer repairs, upgrades and custom built PCs. Providing professional computer repair services to the Campbelltown and Wollongong areas for over 20 years.';
+                }
+            })
+
+        // ... other routes excluded for brevity
+
+        ;
+    }
+
+    run.$inject = ['$rootScope', '$location', '$window'];
+    function run($rootScope, $location, $window) {
+        // initialise google analytics
+        $window.ga('create', 'G-DJ6WEV7CD6', 'auto');
+
+        // track pageview on state change
+        $rootScope.$on('$stateChangeSuccess', function (event) {
+            $window.ga('send', 'pageview', $location.path());
+        });
+    }
+})();
+
+                // ga('create', 'G-DJ6WEV7CD6');
+                // ga('set', 'title', 'Elefun');
+                // ga('send', 'pageview');
                 // window.dataLayer = window.dataLayer || [];
                 // function gtag(){dataLayer.push(arguments);}
                 // gtag('js', new Date());
