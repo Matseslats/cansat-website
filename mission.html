@@ -55,8 +55,9 @@
             "url": "https://cansat-trident.space/mission.html",
             "logo": "https://cansat-trident.space/images/logo.png"
         }
-        </script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ6WEV7CD6"></script>
+    </script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ6WEV7CD6"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -116,7 +117,7 @@
     <section>
         <div class="container reveal"><span>
             <div class="column border-right" style="line-height: 350px;">
-                <h2>Update</h2>
+                <h2>Status</h2>
             </span></div>
             
             <div class="column"><span>
@@ -132,6 +133,16 @@
                 </h3>
             </span></div>
         </div>
+    </section>
+    
+    <section>
+        <script src="showIMUGraph.js"></script>
+        <div id="chartContainer" style="height: 450px; width: 100%;"></div>
+    </section>
+
+    <section>
+        <script src="showHeightGraph.js"></script>
+        <div id="chartHeightContainer" style="height: 450px; width: 100%;"></div>
     </section>
     
     <section>
