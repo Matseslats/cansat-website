@@ -281,14 +281,14 @@ form h3 {
 button{
   text-align: center;
   padding: 20px;
-  background-color: #0060df;
+  background-color: rgba(62, 62, 62, 0.605);
   border-style:solid;
   border-color: #ffffff;
-  border-width: 4px;
-  border-radius: 20px;
+  border-width: 2px;
+  border-radius: 5px;
 }
 button:hover{
-  background-color: #003479;
+  background-color: #1c1c1c89;
   cursor: pointer;
 }
 button a {
@@ -380,7 +380,7 @@ button a {
   .texttop {
     text-align: center;
     line-height: normal;
-    padding-top: 50%;
+    padding-top: 150px;
   }
   .smaller h2 {
     padding-left: 0;
@@ -408,6 +408,12 @@ button a {
   }
   h3 {
     text-align: left;
+  }
+  button {
+    width: 100%;
+  }
+  .intro {
+    padding-bottom: 60px;
   }
 }
 @media (max-width: 450px){
