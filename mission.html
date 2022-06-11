@@ -105,6 +105,160 @@
             <i class="fa fa-bars"></i>
         </a>
       </ul> 
+      <fullsection>
+        <div class="grid-container">
+            <div class="grid-element">
+                <p><h1>International competition, Italy</h1></p>
+            </div>
+            
+        </div>
+    </fullsection>
+    <section>
+        <div class="container reveal"><span>
+            <div class="column" style="line-height: 480px;">
+                <h2>Concept</h2>
+            </span></div>
+            <div class="column border-left"><span>
+                <h3>
+                    <p>
+                        To challenge the competition, a unique and creative way to design the CanSat
+                        and complete the assignment set was devised. The idea that was decided upon
+                        was a powered landing from a drone. Due to restrictions with the small form
+                        factor, the decision to use three foldable arms was made. This is how the CanSat
+                        ended up with its three signature rotor arms, which lead to the name "Trident".
+                    </p><br>
+                    <p>
+                        The arms are spring-loaded and will be realized after deployment while in the air.
+                        They are connected to the body of the CanSat through bearings that are
+                        threaded over a metal rod. Following the deployment, the rotors will keep the
+                        CanSat within a vertical velocity of 5 to 12m/s. The flight will end in a soft
+                        landing provided by the increased thrust of the propellers. Due to limited space,
+                        a creative way of making both the rotor arms and rotor propellers was needed,
+                        However, with the sacrifice of the fourth rotor arm comes inherent stability
+                        issues.
+                    </p>  <br>
+                    <p>
+                        Three arms meant it was no longer possible to control the yaw. To address this
+                        issue, a solution where the third arm could vector its thrust was put in place.
+                    </p><br>
+                    <p>
+                        The design procedure was of iterative design, namely setting all the restrictions
+                        of building it and making changes to the design features which did not meet the
+                        design restrictions.
+                    </p>
+                </h3>
+            </span></div>
+        </div>
+    </section>
+    <section>
+        <div class="container reveal"><span>
+            <div class="column" style="line-height: 330px;">
+                <h2>Electrical</h2>
+            </span></div>
+            <div class="column border-left"><span>
+                <h3>
+                    <p>
+                        To allow for actively stabilized flight, one is dependent on a plethora of
+                        components. The CanSat will have to be aware of its current position, rotation,
+                        and altitude. it will also track how all of those values change over time. As a
+                        result, one needs a lot of computing power, a simple Arduino won't be able to
+                        keep up with all the computing necessary. This brought the team to use a
+                        raspberry pi compute module 4 (RPiCM4).
+                    </p><br>
+                    <p>
+                        RPiCM4: This microcontroller allows for many computations to be done, while
+                        still keeping a small enough form factor to fit in a CanSat. The RPiCM4 offers
+                        plenty of General Purpose Input and Output (GPIO) ports to be used for sensors
+                        and outputs. The drawback of using an RPiCM4 instead of a smaller less capable
+                        microcontroller is its power consumption. Therefore the team decided to add an
+                        additional microcontroller to turn on or off the RPiCM4, for this an ATTINY85 was
+                        chosen.
+                    </p>
+                </h3>
+            </span></div>
+        </div>
+    </section>
+    <section>
+        <div class="container reveal"><span>
+            <div class="column" style="line-height: 360px;">
+                <h2>Software</h2>
+            </span></div>
+            <div class="column border-left"><span>
+                <h3>
+                    <p>
+                        It is common to program the Raspberry Pi family of microcontrollers in Python.
+                        When optimizing speed is required, programmers usually choose to write code in
+                        C or C++. Trident ended up choosing Python for programming due to ease of use
+                        and the ability to write multithreaded and multiple processes at once. It is
+                        believed that by writing a slower program, Python, with multithreading, rather
+                        than a faster program, c++, without multithreading, the program will run faster.
+                    </p><br>
+                    <p>
+                        The sensors on Trident do not directly measure the rotation and attitude of the
+                        craft. Instead, they measure the gravitational force on each axis, as well as
+                        rotational speed and magnetic field strength on the same axes. To convert from
+                        the read data to real-world heading and attitude, an Extended Kalman Filter
+                        (EKF) will be used. This filter takes into account all the measured data and
+                        converts it into three outputs, pitch, yaw, and roll. Instead of writing this from
+                        scratch, python's Attitude and Heading Reference System (AHRS) library will be
+                        used.
+                    </p>
+                </h3>
+            </span></div>
+        </div>
+    </section>
+    <section>
+        <div class="container reveal"><span>
+            <div class="column" style="line-height: 350px;">
+                <h2>PID control</h2>
+            </span></div>
+            <div class="column border-left"><span>
+                <h3>
+                    <p>
+                        The standard way of controlling drones, and the one trident uses, is using a
+                        Proportional-Integral-Derivative (PID) controller. The basic working principle of a
+                        PID controller is the summation of three control signals, a difference (P),
+                        derivative (D), and integral (I) of the device's position. It produces an output
+                        steering signal that is capable of knowing what reaction the device has on the
+                        steering, and applying that as gain or dampening of the steering.
+                    </p><br>
+                    <p>
+                        𝑢(𝑡) = 𝐾ρ𝑒(𝑡) + 𝐾𝑖
+                        0
+                        𝑡
+                        ∫ 𝑒(τ)𝑑τ + 𝐾𝑑
+                        𝑑𝑒(𝑡)
+                        𝑑𝑡
+                    </p><br>
+                    <p>
+                        The K values are the weights of the P, I, and D, and each term is summed to
+                        produce an output. Each weight will need to be tuned to produce the desired
+                        output, where the drone is reactive but does not over-correct.
+                        One PID controller is required per axis of steering. Pitch, yaw, roll, altitude,
+                        latitude, and longitude will therefore require their own PID controllers. These
+                        controllers will feed their outputs to three motors and a servo.
+                    </p>
+                </h3>
+            </span></div>
+        </div>
+    </section>
+    <section>
+        <div class="container reveal bordertop2"><span>
+            <div class="column">
+                <h2>Pre-launch</h2>
+            </span></div>
+            
+            <div class="column border-left"><span>
+                <h3>
+                    <p>
+                        Our pre-launch report is available here:
+                        <br><br>
+                        <button type="button"><a href="pre-launch-international.html" target="_blank" rel="noopener noreferrer">Team Trident Pre-Launch Report International.pdf</a></button>
+                    </p>
+                </h3>
+            </span></div>
+        </div>
+    </section>
     <fullsection>
         <div class="grid-container">
             <div class="grid-element">
@@ -115,11 +269,10 @@
     </fullsection>
     <section>
         <div class="container reveal"><span>
-            <div class="column border-right" style="line-height: 350px;">
-                <h2>Update</h2>
+            <div class="column" style="line-height: 350px;">
+                <h2>Status</h2>
             </span></div>
-            
-            <div class="column"><span>
+            <div class="column border-left"><span>
                 <h3>
                     <p>
                         Trident won the 2022 Norwegian CanSat Competition!!!<br><br> 
@@ -136,11 +289,11 @@
     
     <section>
         <div class="container reveal bordertop2"><span>
-            <div class="column border-right">
+            <div class="column">
                 <h2>Pre-launch</h2>
             </span></div>
             
-            <div class="column"><span>
+            <div class="column border-left"><span>
                 <h3>
                     <p>
                         Our pre-launch report is available here:

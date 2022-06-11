@@ -158,6 +158,9 @@ progress{
 .border-right{
   border-right: 4px solid white;
 }
+.border-left{
+  border-left: 4px solid white;
+}
 .border-sides{
   border-left: 4px solid white;
   border-right: 4px solid white;
@@ -304,7 +307,7 @@ button a {
     flex-shrink: 0;
     margin-bottom: 20%;
     float:left;
-    text-align: center;
+    text-align:  center;
     flex-shrink: 0;
   }
   .border-sides{
@@ -326,6 +329,10 @@ button a {
   }
   .border-right{
     border-right: 0px solid white;
+  }
+  .border-left{
+    border-left: 0px solid white;
+    border-bottom: 4px solid white;
   }
 
   .border-sides{
@@ -399,6 +406,9 @@ button a {
     opacity: 0;
     z-index: 0;
   }
+  h3 {
+    text-align: left;
+  }
 }
 @media (max-width: 450px){
   section {
@@ -407,5 +417,8 @@ button a {
   }
   .column h2 {
     font-size: 2em;
+  }
+  h3 {
+    text-align: left;
   }
 }
